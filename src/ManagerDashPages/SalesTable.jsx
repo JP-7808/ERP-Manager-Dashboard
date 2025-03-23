@@ -43,7 +43,7 @@ const SalesTable = () => {
   const paginatedData = salesData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <div className="p-6 bg-white rounded-lg shadow-lg">
+    <div className="p-4 bg-white rounded-lg shadow-lg">
       <h3 className="text-lg font-semibold mb-4">Sales Report</h3>
 
       {loading ? (
