@@ -59,7 +59,7 @@ const SalesTable = () => {
                 <th className="py-3 px-6">Product Name</th>
                 <th className="py-3 px-6">Quantity</th>
                 <th className="py-3 px-6">Amount</th>
-                <th className="py-3 px-6">Date of Sale</th>
+               
               </tr>
             </thead>
             <tbody>
@@ -68,9 +68,7 @@ const SalesTable = () => {
                   <td className="py-3 px-6">{item.productName || "N/A"}</td>
                   <td className="py-3 px-6">{item.quantity}</td> {/* Display quantity for each product */}
                   <td className="py-3 px-6">{item.amount || "0"}</td>
-                  <td className="py-3 px-6">
-                    {new Date(item.dateOfSale).toLocaleDateString("en-GB") || "N/A"}
-                  </td>
+                  
                 </tr>
               ))}
             </tbody>
