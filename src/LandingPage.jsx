@@ -47,7 +47,7 @@ export default function LandingPage() {
               </button>
            
               </Link>
-              <Link to={"https://employee-dash-rho.vercel.app/"}>
+              <Link to={"https://erp-employee-dashboard.vercel.app/"}>
               {/* <a href="https://emp-dashboard-ochre.vercel.app/">  */}
               <button className="w-full text-left py-3 px-4 hover:bg-blue-700 rounded">
                 Employee Portal
@@ -102,7 +102,7 @@ export default function LandingPage() {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <Link to={"https://employee-dash-rho.vercel.app/"}> <h3 className="text-2xl font-semibold text-blue-900">
+            <Link to={"https://erp-employee-dashboard.vercel.app/"}> <h3 className="text-2xl font-semibold text-blue-900">
                 Employee Portal
               </h3></Link>
               <p className="text-gray-600 mt-2">
