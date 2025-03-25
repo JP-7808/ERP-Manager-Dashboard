@@ -79,8 +79,8 @@ const PerformanceTrackingMain = ({ isSidebarOpen }) => {
 
       <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg mt-6">
         <h3 className="text-lg font-semibold mb-4">TEAMS QUARTERLY PERFORMANCE</h3>
-        <div className="overflow-x-auto">
-          <table className="w-screen border border-gray-300 text-gray-700 text-sm md:text-base">
+        <div className="overflow-x-auto w-full max-h-80">
+          <table className="w-full text-gray-700 text-lg text-center border-collapse">
             <thead>
               <tr className="bg-gray-200 text-gray-600 uppercase text-left">
                 <th className="py-3 px-4 text-center">TEAM NO</th>

@@ -7,7 +7,7 @@ import AuthContext from "./AuthContext/AuthContext"; // ✅ Import Auth Context
 const leaderboardData = [
   { name: "Orxan Hüseyinov", target: "20%", achieved: "30%", image: "https://randomuser.me/api/portraits/men/1.jpg", highlight: true },
   { name: "Ayla Mammadova", target: "20%", achieved: "20%", image: "https://randomuser.me/api/portraits/women/2.jpg", highlight: false },
-  { name: "Seving Aslanova", target: "20%", achieved: "20%", image: "https://randomuser.me/api/portraits/women/3.jpg", highlight: false },
+  
 ];
 
 const contestData = [
@@ -52,15 +52,15 @@ const SalesContest = ({ isSidebarOpen }) => {
 
   return (
     <div
-      className={`mt-20 p-4 md:p-6 bg-gray-100 min-h-screen transition-all duration-300 ${
-        isSidebarOpen ? "lg:ml-72 lg:w-[calc(100%-18rem)]" : "w-screen"
-      }`}
+    className={`mt-20 p-4 md:p-6 bg-gray-100 min-h-screen w-full overflow-hidden transition-all duration-300 ${
+      isSidebarOpen ? "lg:ml-72 lg:w-[calc(100%-18rem)]" : "w-full"
+    }`}
     >
       {/* Leaderboard & Charts */}
       <div className="flex flex-col md:grid md:grid-cols-3 gap-6">
         {/* Leaderboard */}
         <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg">
-          <h3 className="text-lg font-semibold mb-4">Leader Board</h3>
+          <h3 className="text-lg font-semibold mb-4">Leader Boards</h3>
           <div className="flex flex-col items-center space-y-4">
             {leaderboardData.map((user, index) => (
               <div
@@ -112,8 +112,8 @@ const SalesContest = ({ isSidebarOpen }) => {
       <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg mt-6 w-full">
   <h3 className="text-lg font-semibold mb-4 text-center">Contest Status</h3>
 
-  <div className="overflow-x-auto">
-    <table className="w-screen text-gray-700 text-lg text-center border-collapse">
+  <div className="overflow-x-auto w-full max-h-80">
+    <table className="w-full text-gray-700 text-lg text-center border-collapse">
       <thead>
         <tr className="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
           <th className="py-3 px-6 border">Team Name</th>
